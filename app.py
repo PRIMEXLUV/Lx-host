@@ -25,11 +25,11 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = os.getenv('BOT_TOKEN')
-OWNER_ID_STR = os.getenv('OWNER_ID')
-ADMIN_ID_STR = os.getenv('ADMIN_ID')
-YOUR_USERNAME = os.getenv('YOUR_USERNAME')
-UPDATE_CHANNEL = os.getenv('UPDATE_CHANNEL')
+TOKEN = os.getenv('9297765199:AAFa-BRdCLUDuZIjL7E_Tm9RuWUtc94pcSg')
+OWNER_ID_STR = os.getenv('8771273114')
+ADMIN_ID_STR = os.getenv('8771273114')
+YOUR_USERNAME = os.getenv('kazutoraNexx')
+UPDATE_CHANNEL = os.getenv('Lx-host')
 
 if not TOKEN:
     logger.error("BOT_TOKEN not found in environment variables!")
@@ -46,9 +46,9 @@ except ValueError:
     logger.error("OWNER_ID or ADMIN_ID must be valid integers!")
     raise
 
-YOUR_USERNAME = '@Hackerwibes9'
-UPDATE_CHANNEL = 'https://t.me/geniushackertools'
-YOUTUBE_CHANNEL = 'https://youtube.com/@geniushacker29'
+YOUR_USERNAME = '@KazutoraNexx'
+UPDATE_CHANNEL = 'https://t.me/Lx-host'
+YOUTUBE_CHANNEL = 'https://youtube.com/Nhi-hai'
 CHANNEL_USERNAME = '@' + UPDATE_CHANNEL.rstrip('/').split('/')[-1]
 
 BASE_DIR = Path(__file__).parent.absolute()
@@ -303,7 +303,7 @@ def get_admin_panel_keyboard():
 
 def build_welcome_text(user_id: int, full_name: str) -> str:
     return f"""╔═══════════════════════╗
-    🚀 <b>GENIUS HOSTBOT</b> 🚀
+    🚀 <b> LOVE HOSTBOT</b> 🚀
     ⚡ <i>Script Runner Bot</i>
 ╚═══════════════════════╝
 
@@ -329,7 +329,7 @@ def build_welcome_text(user_id: int, full_name: str) -> str:
 📢 <b>Updates:</b> {UPDATE_CHANNEL}
 🎥 <b>YouTube:</b> {YOUTUBE_CHANNEL}
 
-⚡ <b>Developed by</b> Aditya (Genius Hacker)
+⚡ <b>Developed by</b> KazutoraNexx (Pathak love)
 🔒 <b>Version:</b> 2.0"""
 
 @dp.message(Command("start"))
